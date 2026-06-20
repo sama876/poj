@@ -1,0 +1,9 @@
+{
+  "name": "execution-coach",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Landing page + chat app for the AI Execution Coach, backed by the Anthropic API.",
+  "engines": {
+    "node": ">=18"
+  }
+}

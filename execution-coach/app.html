@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Execution Coach — App</title>
+<link rel="stylesheet" href="assets/styles.css">
+<link rel="stylesheet" href="assets/app.css">
+</head>
+<body class="app-body">
+
+<nav class="app-nav">
+  <div class="wrap">
+    <a href="index.html" class="back">← Execution Coach</a>
+    <div class="actions">
+      <button class="btn btn-ghost" id="resetBtn" style="padding:9px 16px;font-size:12px;">Reset session</button>
+    </div>
+  </div>
+</nav>
+
+<div id="apiWarning" class="api-warning">
+  No backend connected yet — <code>/api/chat</code> didn't respond. Deploy this folder (see <code>README.md</code>) with your <code>ANTHROPIC_API_KEY</code> set as an environment variable, then reload.
+</div>
+
+<main class="app-main">
+  <section class="chat-col">
+    <div class="chat-scroll" id="chatScroll">
+      <div class="wrap" id="chatMessages"></div>
+    </div>
+    <div class="chat-input-row">
+      <div class="wrap">
+        <textarea id="chatInput" rows="1" placeholder="What are you avoiding right now?"></textarea>
+        <button class="send" id="sendBtn">Send</button>
+      </div>
+    </div>
+    <div class="wrap" style="max-width:760px; padding:0 28px 14px;">
+      <p class="hint">Enter to send · Shift+Enter for a new line</p>
+    </div>
+  </section>
+
+  <aside class="sidebar">
+    <div class="side-block">
+      <h3>Focus sprint</h3>
+      <div id="sprintIdle">
+        <div class="sprint-times">
+          <button class="sprint-btn" data-min="15">15 min</button>
+          <button class="sprint-btn" data-min="25">25 min</button>
+          <button class="sprint-btn" data-min="50">50 min</button>
+          <button class="sprint-btn" data-min="90">90 min</button>
+        </div>
+      </div>
+      <div id="sprintActive" class="sprint-active" style="display:none;">
+        <div class="t" id="sprintTime">25:00</div>
+        <div class="l">Sprint running</div>
+        <button id="sprintCancel">Cancel</button>
+      </div>
+    </div>
+
+    <div class="side-block">
+      <h3>This session</h3>
+      <div class="stat-row"><span>Started</span><span class="val" id="statStarted">—</span></div>
+      <div class="stat-row"><span>Exchanges</span><span class="val" id="statExchanges">0</span></div>
+      <div class="stat-row"><span>Sprints run</span><span class="val" id="statSprints">0</span></div>
+    </div>
+
+    <div class="side-block">
+      <button class="reset-link" id="resetBtn2">Clear conversation</button>
+    </div>
+  </aside>
+</main>
+
+<script src="assets/app.js"></script>
+</body>
+</html>

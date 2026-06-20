@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Execution Coach — Refuses to let you disappear</title>
+<meta name="description" content="An AI coach that doesn't motivate you. It makes sure the work gets done.">
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="wrap">
+    <div class="brand"><span class="dot"></span>EXECUTION COACH</div>
+    <div class="navlinks">
+      <a href="#problem">The problem</a>
+      <a href="#framework">How it works</a>
+      <a href="#features">Features</a>
+      <a href="#pricing">Pricing</a>
+    </div>
+    <a href="app.html" class="btn btn-primary">Launch the coach</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <p class="eyebrow">Anti-procrastination engine</p>
+      <h1>You don't need<br>more motivation.<br>You need <em>a deadline<br>that watches.</em></h1>
+      <p class="lede">Most people already know what to do. The problem is never information — it's avoidance. Execution Coach turns every goal into a timed, measurable task and won't let you leave a conversation without one.</p>
+      <div class="btn-row">
+        <a href="app.html" class="btn btn-primary">Launch the coach →</a>
+        <a href="#problem" class="btn btn-ghost">See how it works</a>
+      </div>
+    </div>
+
+    <div class="panel timer-panel">
+      <div class="timer-head">
+        <span>Next action</span>
+        <span class="status" id="timerStatus">In progress</span>
+      </div>
+      <div class="timer-display" id="timerDisplay">12:00</div>
+      <div class="timer-bar" id="timerBar"><div id="timerBarFill"></div></div>
+      <div class="timer-task">
+        <span class="label">Task</span>
+        <span id="timerTask">Open the doc and write one sentence.</span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="section" id="problem">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Pattern detection</p>
+      <h2>It's rarely laziness. It's one of these.</h2>
+      <p class="lede" style="margin-top:14px;">The anti-procrastination engine is trained to spot these eight patterns the moment they show up in conversation — then interrupt them before they become the day's excuse.</p>
+    </div>
+    <div class="diag-grid" id="diagGrid">
+      <div class="diag-chip"><span class="led"></span>Endless planning</div>
+      <div class="diag-chip"><span class="led"></span>Perfectionism</div>
+      <div class="diag-chip"><span class="led"></span>Research addiction</div>
+      <div class="diag-chip"><span class="led"></span>Tool hopping</div>
+      <div class="diag-chip"><span class="led"></span>Course hopping</div>
+      <div class="diag-chip"><span class="led"></span>Fear of failure</div>
+      <div class="diag-chip"><span class="led"></span>Fear of success</div>
+      <div class="diag-chip"><span class="led"></span>Social distraction</div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="framework">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">The execution framework</p>
+      <h2>Every goal goes through the same seven steps.</h2>
+      <p class="lede" style="margin-top:14px;">No exceptions, no shortcuts. This is what runs underneath every conversation.</p>
+    </div>
+    <div class="framework-list">
+      <div class="fw-step">
+        <div class="fw-num">01</div>
+        <div><h3>Determine the objective</h3><p>Vague goals get rejected. The coach won't move forward until the goal is concrete.</p></div>
+      </div>
+      <div class="fw-step">
+        <div class="fw-num">02</div>
+        <div><h3>Determine the real obstacle</h3><p>Separates genuine constraints from avoidance dressed up as a reason.</p></div>
+      </div>
+      <div class="fw-step">
+        <div class="fw-num">03</div>
+        <div><h3>Create a practical action plan</h3><p>A sequence of concrete tasks, each with a deadline and a measurable outcome.</p></div>
+      </div>
+      <div class="fw-step">
+        <div class="fw-num">04</div>
+        <div><h3>Identify a 5–15 minute first task</h3><p>Overwhelm gets broken down until the next step is small enough to start right now.</p></div>
+      </div>
+      <div class="fw-step">
+        <div class="fw-num">05</div>
+        <div><h3>Require commitment</h3><p>You say when you'll do it. The coach holds you to the time you gave.</p></div>
+      </div>
+      <div class="fw-step">
+        <div class="fw-num">06</div>
+        <div><h3>Request proof of completion</h3><p>Progress is reported, not assumed. Streaks and misses are both tracked.</p></div>
+      </div>
+      <div class="fw-step">
+        <div class="fw-num">07</div>
+        <div><h3>Assign the next action immediately</h3><p>No conversation ends without a next, executable step already on the table.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="features">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Premium modes</p>
+      <h2>Five ways the coach stays on you.</h2>
+    </div>
+    <div class="feature-grid">
+      <div class="feature-card">
+        <span class="tag">Daily</span>
+        <h3>Daily accountability</h3>
+        <ul>
+          <li>Morning check-in</li>
+          <li>Evening review</li>
+          <li>Habit & goal tracking</li>
+          <li>Streak tracking</li>
+        </ul>
+      </div>
+      <div class="feature-card">
+        <span class="tag">Detection</span>
+        <h3>Anti-procrastination engine</h3>
+        <ul>
+          <li>Identifies the excuse</li>
+          <li>Explains why it's happening</li>
+          <li>Hands you a smaller action</li>
+          <li>Follows up until it's done</li>
+        </ul>
+      </div>
+      <div class="feature-card">
+        <span class="tag">Timed</span>
+        <h3>Focus sprint mode</h3>
+        <ul>
+          <li>15, 25, 50 or 90-minute sessions</li>
+          <li>One exact objective per sprint</li>
+          <li>No ambiguity allowed</li>
+          <li>Progress report required after</li>
+        </ul>
+      </div>
+      <div class="feature-card">
+        <span class="tag">Revenue</span>
+        <h3>Business builder mode</h3>
+        <ul>
+          <li>Revenue & lead targets</li>
+          <li>Sales tracking</li>
+          <li>Client acquisition plans</li>
+          <li>Weekly growth reports</li>
+        </ul>
+      </div>
+      <div class="feature-card">
+        <span class="tag">Guardrails</span>
+        <h3>AI discipline mode</h3>
+        <ul>
+          <li>No "I'll do it later"</li>
+          <li>No endless planning</li>
+          <li>No repeated excuses</li>
+          <li>No goal-switching without reason</li>
+        </ul>
+      </div>
+      <div class="feature-card">
+        <span class="tag">Measured</span>
+        <h3>Success, redefined</h3>
+        <ul>
+          <li>Tasks completed, not satisfaction scores</li>
+          <li>Goals achieved</li>
+          <li>Habits maintained</li>
+          <li>Consistency over time</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="pricing">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Plans</p>
+      <h2>Pick how much pressure you need.</h2>
+    </div>
+    <div class="pricing-grid">
+      <div class="price-card">
+        <div class="price-name">Starter</div>
+        <div class="price-amount">$9 <span>/ month</span></div>
+        <ul>
+          <li>Daily accountability</li>
+          <li>Habit tracking</li>
+          <li>Focus sprints</li>
+        </ul>
+        <a href="app.html" class="btn btn-ghost">Start here</a>
+      </div>
+      <div class="price-card featured">
+        <div class="price-name">Pro</div>
+        <div class="price-amount">$29 <span>/ month</span></div>
+        <ul>
+          <li>Everything in Starter</li>
+          <li>Anti-procrastination analysis</li>
+          <li>Weekly performance reports</li>
+          <li>Goal planning system</li>
+        </ul>
+        <a href="app.html" class="btn btn-primary">Start here</a>
+      </div>
+      <div class="price-card">
+        <div class="price-name">Elite</div>
+        <div class="price-amount">$99 <span>/ month</span></div>
+        <ul>
+          <li>Everything in Pro</li>
+          <li>Business builder mode</li>
+          <li>Revenue tracking</li>
+          <li>Custom execution plans</li>
+          <li>Advanced accountability analytics</li>
+        </ul>
+        <a href="app.html" class="btn btn-ghost">Start here</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="final-cta">
+  <div class="wrap">
+    <p class="eyebrow" style="justify-content:center;">Start now</p>
+    <h2>Your next action is already 5 minutes away.</h2>
+    <p class="lede">No motivation speech. No plan to "review later." Open the coach and it will ask you one thing: what are you avoiding, and when do you start.</p>
+    <div class="btn-row">
+      <a href="app.html" class="btn btn-primary">Launch the coach →</a>
+    </div>
+    <p class="quote-line">"You don't need another productivity app. You need a coach that <span>refuses to let you disappear</span> when it's time to do the work."</p>
+  </div>
+</section>
+
+<footer class="wrap">
+  <span>EXECUTION COACH</span>
+  <span>Built for finishing, not planning.</span>
+</footer>
+
+<script src="assets/landing.js"></script>
+</body>
+</html>
